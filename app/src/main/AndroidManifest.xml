@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:label="Fridge" android:name="com.example.jchavis06.fridge_application.grocery_item"/>
+        <activity android:label="Fridge" android:name="com.example.jchavis06.fridge_application.shopping"/>
     </application>
 
 </manifest>
