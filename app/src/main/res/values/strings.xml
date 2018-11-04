@@ -2,4 +2,8 @@
 <resources>
     <string name="app_name">fridge-application</string>
     <string name="okay">okay</string>
+    <string name="lvmsg">Leave a Message</string>
+    <string name="edmsg">Type Message Here</string>
+    <string name="sdmsg">Post</string>
+    <string name="divider">divider</string>
 </resources>

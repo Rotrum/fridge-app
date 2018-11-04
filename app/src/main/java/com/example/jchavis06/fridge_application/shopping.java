@@ -33,7 +33,6 @@ public class shopping extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             Log.d("TAG", "onCreate()");
-            //Button rd = findViewById(R.id.butrd)
             mShoppingList = (ListView) findViewById(R.id.shopping_listView);
             mItemEdit = (EditText) findViewById(R.id.item_editText);
             mAddButton = (Button) findViewById(R.id.add_button);

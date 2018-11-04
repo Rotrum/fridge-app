@@ -25,12 +25,12 @@ public class grocery_item extends AppCompatActivity {
         setContentView(R.layout.grocery_item);
         Bundle extras = getIntent().getExtras();
         final String grocery_item = extras.getString("item");
-        TextView tv1 = (TextView)findViewById(R.id.textView);
+        TextView tv1 = findViewById(R.id.textView);
         tv1.setText("Edit " + grocery_item);
 
-        saveButton = (Button) findViewById(R.id.save_button);
-        removeButton = (Button) findViewById(R.id.remove_item_button);
-        editText = (EditText) findViewById(R.id.editText);
+        saveButton = findViewById(R.id.save_button);
+        removeButton =  findViewById(R.id.remove_item_button);
+        editText = findViewById(R.id.editText);
 
         glw = new GroceryListWriter(getApplicationContext());
         String description = glw.readGroceryListItemDescription(grocery_item);
@@ -43,8 +43,8 @@ public class grocery_item extends AppCompatActivity {
                 String desc = editText.getText().toString();
                 Log.d("DESCRIPTION", "Description: " + desc);
                 glw.editGroceryListItemDescription(grocery_item, desc);
-                Intent myIntent = new Intent(getApplicationContext(), shopping.class);
-                startActivity(myIntent);
+                //Intent myIntent = new Intent(getApplicationContext(), shopping.class);
+                //startActivity(myIntent);
             }
         });
 
@@ -53,8 +53,8 @@ public class grocery_item extends AppCompatActivity {
             public void onClick(View view) {
                 //this is where we remove the item from the grocery list
                 glw.removeFromGroceryList(grocery_item);
-                Intent myIntent = new Intent(getApplicationContext(), shopping.class);
-                startActivity(myIntent);
+                //Intent myIntent = new Intent(getApplicationContext(), shopping.class);
+                //startActivity(myIntent);
             }
         });
     }
