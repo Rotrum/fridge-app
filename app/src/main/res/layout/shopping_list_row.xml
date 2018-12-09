@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/itemNameView"
+        android:layout_width="101dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingRight="4dp"
+        android:text="Item Name"
+        android:textColor="@color/grocery"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="Qty: " />
+
+    <TextView
+        android:id="@+id/itemQuantityView"
+        android:layout_width="21dp"
+        android:layout_height="match_parent"
+        android:gravity="right|center_vertical"
+        android:paddingRight="4dp"
+        android:text="2"
+        android:textColor="@color/grocery"
+        android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/itemQuantityTypeView"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
+            android:text="Gallons"
+            android:textSize="15dp"
+            android:textColor="@color/grocery"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Brand: "
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.6" />
+
+    <TextView
+        android:id="@+id/itemBrandView"
+        android:layout_width="83dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="Nutella"
+        android:textColor="@color/grocery"
+        android:textSize="15dp" />
+            android:gravity="center_vertical"/>
+
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="36dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+
+</LinearLayout>

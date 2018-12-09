@@ -54,10 +54,19 @@ public class msgPg extends AppCompatActivity {
        // String[] s = readAsset();
 
         int sz = s.length;
-        String[] msgArray = Arrays.copyOfRange(s, 0, sz/2);
-        String[] nameArray = Arrays.copyOfRange(s, sz/2, sz);
+        String[] msgArr = Arrays.copyOfRange(s, 0, sz/3);
+        String[] nameArr = Arrays.copyOfRange(s, sz/3, 2*sz/3);
+        String[] recArr = Arrays.copyOfRange(s, 2*sz/3, sz);
 
-        msgr = new cAdapter(this, nameArray, msgArray);
+        ArrayList<String> msgArray = new ArrayList<String>();
+        ArrayList<String> nameArray = new ArrayList<String>();
+        ArrayList<String> recArray = new ArrayList<String>();
+
+        msgArray.addAll(Arrays.asList(msgArr));
+        nameArray.addAll(Arrays.asList(nameArr));
+        recArray.addAll(Arrays.asList(recArr));
+
+        msgr = new cAdapter(this, nameArray, msgArray, recArray);
 
         ListView listView = findViewById(R.id.msg_scr);
         listView.setAdapter(msgr);
