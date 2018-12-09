@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">fridge-application</string>
-    <string name="okay">okay</string>
+    <string name="blank" />
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="okay">Okay</string>
     <string name="lvmsg">Leave a Message</string>
     <string name="edmsg">Type Message Here</string>
     <string name="sdmsg">Post</string>
     <string name="divider">divider</string>
+
+    <string-array name="quantity_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="quantity_type_options">
+        <item>Slices</item>
+        <item>Cartons</item>
+        <item>Buschels</item>
+        <item>Pounds</item>
+        <item>Gallons</item>
+        <item>Pieces</item>
+        <item>Containers</item>
+        <item>Packs</item>
+    </string-array>
 </resources>

@@ -18,14 +18,43 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/msg_nam"
+            android:id="@+id/msgH"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8sp"
-            android:text="TextView"
-            android:textSize="18sp" />
+            android:text="Hidden"
+            android:visibility="gone"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/msg_nam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8sp"
+                android:text="TextView"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/msg_ed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(edited)"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
