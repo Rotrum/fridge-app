@@ -9,17 +9,19 @@
     <EditText
         android:id="@+id/msg_input"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="178dp"
         android:ems="15"
-        android:maxLines="8"
         android:hint="@string/edmsg"
+        android:gravity="center"
         android:inputType="textMultiLine"
+        android:maxLines="8"
         app:layout_constrainedHeight="false"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.35" />
+        app:layout_constraintVertical_bias="0.703" />
 
     <Button
         android:id="@+id/msg_post"
@@ -34,9 +36,10 @@
 
     <TextView
         android:id="@+id/postFrid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="208dp"
+        android:layout_height="22dp"
         android:text="Posting to Fridge"
+        android:gravity="center"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@id/msg_input"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -46,13 +49,15 @@
 
     <Button
         android:id="@+id/msgRec"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="52dp"
         android:text="Change Recipients"
+        android:background="@color/grocery"
+        android:textColor="@color/colorSec"
         app:layout_constraintBottom_toTopOf="@id/msg_input"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/postFrid"
-        app:layout_constraintVertical_bias="0.5"/>
+        app:layout_constraintVertical_bias="0.5" />
 
 </android.support.constraint.ConstraintLayout>

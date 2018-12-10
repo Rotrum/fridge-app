@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
@@ -572,7 +573,8 @@ public class MainActivity extends AppCompatActivity {
                                         String s = nSen.get(i);
                                         nSen.remove(i);
                                         Sen.add(s);
-                                        msgTxt.setText("Sending Direct Message");
+                                        String text = "To: " + TextUtils.join(", ", Sen);
+                                        msgTxt.setText(text);
                                     }
                                 });
                             }
